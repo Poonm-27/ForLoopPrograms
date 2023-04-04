@@ -10,15 +10,19 @@ public class Sum_Of_Range {
         int value2 = scanner.nextInt();
         System.out.println("The number range entered is " +value1+ " to " +value2+ ".");
         int sum=0;
-        for (int i = 1; i <=value1; i++)
-        {
-            if (i<=value2)
-            {
-                sum+=i; //sum=sum+i
-                value1++;
+        if(value1>=1 && value2<=20) {
+            for (int i = 1; i <= value1; i++) {
+                if (i <= value2) {
+                    sum += i; //sum=sum+i
+                    value1++;
+                }
             }
+            System.out.println("Sum of the range= " + sum);
         }
-        System.out.println("Sum of the range= " +sum);
+        else
+        {
+            System.out.println("Invalid entry");
+        }
     }
 }
 
