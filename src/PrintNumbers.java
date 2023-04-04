@@ -10,6 +10,7 @@ public class PrintNumbers {
         int start_num = scanner.nextInt(); //reads the integer value from user
         System.out.println("Enter the ending number in range");
         int end_num = scanner.nextInt();
+        System.out.println("The range given is: "+start_num+ "-" +end_num);
         for (int i = start_num; i <=end_num; i++)
         {
             System.out.println(i);//print all the numbers in the range
